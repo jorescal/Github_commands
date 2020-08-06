@@ -1,0 +1,178 @@
+
+
+github commands
+
+
+*** SSH Key Generation
+
+
+Step 1: Download Git Bash.
+
+https://git-scm.com/downloads
+
+
+Step 2: Type the following, replacing with the email address that is linked to your Github account, and hit Enter:
+
+
+ssh-keygen -t rsa -b 4096 -C "<your email address>"
+
+ssh-keygen -t rsa -b 4096 -C "jorescal@gmail.com"
+
+
+
+This will generate a new SSH key.
+
+
+
+
+Step 3: Next, you will be prompted to enter a directory to save the key. I simply press Enter to accept the default location, which is a .ssh folder in the home directory. In other words, you will be able to locate the key in ~/.ssh/id_rsa (in my case '/c/Users/user1/.ssh').
+
+
+
+Step 4: You will then be prompted to choose a passphrase. I prefer not to have a passphrase, so just press Enter and Enter again to confirm the empty passphrase.
+
+Now, if you navigate to the .ssh directory, i.e., if you run the following in the Git Bash terminal,
+
+cd ~/.ssh
+
+and then,
+
+ls
+
+To list the contents of the .ssh directory, you should find id_rsa and id_rsa.pub in the list of contents, where id_rsa is the private version of your key and id_rsa.pub is the public version of your key.
+
+
+
+Step 5: Finally, you will need to add the SSH key to the ssh-agent, which is meant to help with the authentication process. To do that, first you need to start the ssh-agent, so run the following in the Git Bash terminal:
+
+eval "$(ssh-agent -s)"
+
+Step 6: And then add the key to the agent by running the following in the Git Bash terminal:
+
+ssh-add ~/.ssh/id_rsa
+
+
+
+		--Steps to Add SSH Key : 
+
+
+https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0105EN-Coursera/labs/GitHub/GitHub_AddSSHtoRepo.md.html
+https://github.com/IBM/skillsnetwork/blob/master/tools/GITHUB%20-%20Part%201.pdf
+
+
+
+Open GitBash to copy the SSH key previously generated.
+
+Step 1: Copy the command using the below command:
+
+cat ~/.ssh/id_rsa.pub | clip
+
+NOTE: If clip doesn't work, use cat ~/.ssh/id_rsa.pub on command line and the copy the output.
+
+Step 2: Now, Open GitHub and go to Setting (Click on the arrow)
+
+Step 3: Under Personal settings, select SSH and GPG keys, as shown below:
+
+Step 4: Click the button to add a New SSH key.
+
+Step 5: Provide the title. Then select the Key field, and press Ctrl-v to paste the key from the clipboard buffer. The pasted key should have your email address at the end, as shown below:
+
+and click Add SSH Key.
+
+Now, the SSH key is added to your account.
+
+
+
+*** First thing after setting up github integration 
+
+Step 1 
+go to Github account and create a new repository
+
+
+cd ~/Desktop/
+mkdir Github
+cd Github
+
+mkdir GitReps
+cd GitReps
+
+mkdir github_commands
+cd github_commands
+git config --global user.email "jorescal@gmail.com"
+git clone git@github.com:jorescal/Github_commands.git
+ls
+mkdir github_commands.txt
+ls -l -a
+echo "# github_commands.txt...  " >> github_commands.txt
+
+git add github_commands.txt
+git status
+git commit  -m "UPDATING github_commands.txt"
+git push
+
+
+
+
+*** Pull repository from github, update the repository with new files and push the repository for a "Pull request".
+
+
+cd downloads 
+mkdir demo
+cd demo
+git clone git@github.com:jorescal/test.git
+mkdir test.txt
+ls -l -a
+
+vi test.txt
+	"Hellow World"
+
+# or 
+
+echo "# test11" >> test.txt
+ls
+
+git add test.txt
+git status
+git config --global user.email "jorescal@gmail.com"
+git commit  -m "initial commit"
+git push
+
+
+
+*** create repository on local computer and push it to github
+
+
+cd downloads 
+mkdir demo
+cd demo
+
+echo "# test11" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/jorescal/test2.git
+git push -u origin master
+                
+
+
+*** Create a new branch
+
+git branch mybranch
+git status
+git checkout mybranch
+git status
+ls
+echo "# branch" >> stuffonmybranch.txt
+git add stuffonmybranch.txt
+git commit -m "bla bla bla"
+git push --set-upstream origin mybranch    #this command is to create the branch remotly
+git push
+git checkout master 
+git merge mybranch
+git push
+
+
+
+
+
+
