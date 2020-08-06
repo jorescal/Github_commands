@@ -1,4 +1,10 @@
 1
+
+
+
+
+
+
 cd ~/Desktop/Github2/GitReps/github_commands/Github_commands/
 git add 'github commands.txt'
 git status
@@ -11,6 +17,30 @@ git push
 
 
 
+
+
+cd ~/Desktop/
+
+mkdir Github
+cd Github
+
+mkdir GitReps
+cd GitReps
+
+mkdir github_commands
+cd github_commands
+git config --global user.email "jorescal@gmail.com"
+git clone git@github.com:jorescal/Github_commands.git
+ls
+mkdir github_commands.txt
+ls -l -a
+echo "# github_commands.txt...  " >> github_commands.txt
+
+
+
+
+
+*************************************
 
 
 
