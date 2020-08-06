@@ -1,3 +1,4 @@
+1
 cd ~/Desktop/Github2/GitReps/github_commands/Github_commands/
 git add 'github commands.txt'
 git status
