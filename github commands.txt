@@ -105,7 +105,7 @@ mkdir github_commands.txt
 ls -l -a
 echo "# github_commands.txt...  " >> github_commands.txt
 
-git add github_commands.txt
+git add 'github commands.txt'
 git status
 git commit  -m "UPDATING github_commands.txt"
 git push
