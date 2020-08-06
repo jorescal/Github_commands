@@ -2,12 +2,11 @@
 
 
 
-
+*** For every new update
 
 
 cd ~/Desktop/Github2/GitReps/github_commands/Github_commands/
 git add 'github commands.txt'
-git status
 git commit  -m "UPDATING github_commands.txt"
 git push
 
@@ -16,7 +15,7 @@ git push
 
 
 
-
+** For every new file recovery
 
 
 cd ~/Desktop/
