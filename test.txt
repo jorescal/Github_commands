@@ -1,0 +1,47 @@
+echo "# test11" >> test.txt
+
+
+#  the title. Then select the Key field, and press Ctrl-v to paste the key from the clipboard buffer. The pasted key should have your email address at the end, as shown below:
+
+and click Add SSH Key.
+
+Now, the SSH key is added to your account.
+
+
+
+*** First thing after setting up github integration 
+
+Step 1 
+go to Github account and create a new repository
+
+
+cd ~/Desktop/
+mkdir Github
+cd Github
+
+mkdir GitReps
+cd GitReps
+
+mkdir github_commands
+cd github_commands
+git config --global user.email jorescal@gmail.com
+git clone git@github.com:jorescal/Github_commands.git
+ls
+mkdir github_commands.txt
+ls -l -a
+echo # github_commands.txt...  >> github_commands.txt
+
+git add 'github commands.txt'
+git status
+git commit  -m UPDATING github_commands.txt
+git push
+
+
+
+
+*** Pull repository from github, update the repository with new files and push the repository for a Pull request.
+
+
+cd downloads 
+mkdir demo
+cd demo
