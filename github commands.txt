@@ -220,7 +220,31 @@ git merge mybranch
 git push
 
 
+*** Fork a Repository
+Step 1
+look for a Repo you want to collaborate and associate your SSH Key to the proyect 
 
 
+Step 2
+Create a fork for the Repo
+
+Step 3 
+
+From your computer clone the proyect:
+
+cd downloads 
+mkdir demo
+cd demo
+git clone git@github.com:jorescal/fork.git
+
+***edit the file required ***
+
+git add "Updated file"
+git commit  -m "initial commit"
+git push
 
 
+Step 4
+Go to your proyect account associated to the collaboration you are working and make a Pull Request.
+
+ 
