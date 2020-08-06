@@ -1,3 +1,16 @@
+cd ~/Desktop/Github2/GitReps/github_commands/Github_commands/
+git add 'github commands.txt'
+git status
+git commit  -m "UPDATING github_commands.txt"
+git push
+
+
+
+
+
+
+
+
 
 
 github commands
@@ -90,6 +103,7 @@ go to Github account and create a new repository
 
 
 cd ~/Desktop/
+
 mkdir Github
 cd Github
 
@@ -109,6 +123,10 @@ git add 'github commands.txt'
 git status
 git commit  -m "UPDATING github_commands.txt"
 git push
+
+
+
+
 
 
 
