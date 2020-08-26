@@ -5,14 +5,14 @@
 
 
 
-*** For every new update
+*** For every new update to the same file
 
 
 
-cd ~/Desktop/Github2/GitReps/github_commands/Github_commands/
-git add 'github commands.txt'
+cd ~/Desktop/Github2/GitReps/github_commands/Github_commands/	# make sure you are in the correct pat
+git add 'github commands.txt'					# make sure you have the correct file name
 git status
-git commit  -m "UPDATING github_commands.txt"
+git commit  -m "UPDATING github_commands.txt"   		# make a comment by changing what is inside "UPDATING github_comm..."
 git push
 
 
