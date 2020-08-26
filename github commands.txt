@@ -1,14 +1,20 @@
-1
+2
+
+
+
 
 
 
 *** For every new update
 
 
+
 cd ~/Desktop/Github2/GitReps/github_commands/Github_commands/
 git add 'github commands.txt'
+git status
 git commit  -m "UPDATING github_commands.txt"
 git push
+
 
 
 
@@ -34,6 +40,33 @@ ls
 mkdir github_commands.txt
 ls -l -a
 echo "# github_commands.txt...  " >> github_commands.txt
+
+
+
+
+
+
+*************************************
+
+
+
+
+https://github.com/jorescal/Github_commands/blob/master/github%20commands.txt
+ 
+ 
+Github commands 
+ 
+"git init" pushes to GitHub, or clones an existing repository.
+"git add" moves changes from the working directory to the staging area. 
+"git status" allows you to see the state of your working directory and the staged snapshot of your changes. 
+"git commit" takes your staged snapshot of changes and commits them to the project. 
+"git reset" undoes changes that you’ve made to the files in your working directory. 
+"git log" enables you to browse previous changes to a project. 
+"git branch" lets you create an isolated environment within your repository to make changes. 
+"git checkout" lets you see and change existing branches. 
+"git merge" lets you put everything back together again. 
+ 
+Ref: try.github.io 
 
 
 
@@ -111,6 +144,14 @@ Step 1: Copy the command using the below command:
 cat ~/.ssh/id_rsa.pub | clip
 
 NOTE: If clip doesn't work, use cat ~/.ssh/id_rsa.pub on command line and the copy the output.
+
+
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQD0+yneDmPcueN3pVg5XOeacGCWA4C5kZUWRW6bIU5eR0/prDJdwllcMNyDn3vdQMzSozc9y156f67BwVo3ykcXIk+VmSwLHOirK80YlE6fACsRrLLGbKPzL+FEAOVjajs/D91ZD8wLJAZG9dpTvu2TYgyiKAOrkXpqOmRfaX3sGQc2to8e2LGx4SqwZauK1oe3mRfGphDMj9TqZV75AgNNk0IVWcmIGaNFStVNRyWM4vgUOI6pg2Dj2PnfTctmVv6nmrezBJockY87I74H7YrNi6WPQD9X26CbYJh4T4WzNVpBrYpM1nY2dhuuwzeFafuSaUFXrGKE+m31jEtBC+6EaZ6KqWU6yPEzJP/KgeLhfbZBYQHUM2t9zswIt/CPI8SYx9HbWmh5y9nH6gcUTWb7LEg6A/fCnToSzPi0Oow0uvOaaYEUcuYO62eAEkCKPuBIRInNzjnkntgSf34g0Lptx58e6/HUbtgK06Rs4stf4Z+MtJQKdYkJe9ZsvmpV7dcfGLy0oOznaq7cSbK9CYdPRxh+24lHBcAXz01bWwnJgwtRwN8SoMUdGISLdkBW/GKYpbR9SoU7adCmcMI449R42apBrwm3pEsRFYQLpX2sB/aF9Irdi/74OasfbmWeDEwsAEi9FfErkDEUI7AipijUpuv3VxULQtJZWfBcWDMtWw== jorescal@gmail.com
+
+
+
+
 
 Step 2: Now, Open GitHub and go to Setting (Click on the arrow)
 
